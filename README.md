@@ -1,4 +1,4 @@
-# 🌌 DYSA.codes | Premium Web & AI Portfolio
+#  DYSA.codes | Premium Web & AI Portfolio
 
 ![Deployment Status](https://img.shields.io/badge/Deployment-Live-success?style=for-the-badge&logo=vercel)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
