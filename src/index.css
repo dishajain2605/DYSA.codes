@@ -1234,3 +1234,9 @@ body.light-mode .hero-name {
 @media (max-width: 768px) {
   .nav-actions .nav-cta { display: none; }
 }
+
+/* Layout fixes for mobile navbar */
+@media (max-width: 768px) {
+  .nav-logo { margin-right: auto; }
+  .nav-actions { margin-right: 1.25rem; }
+}
