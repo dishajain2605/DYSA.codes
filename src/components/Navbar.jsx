@@ -12,9 +12,14 @@ const LINKS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [theme, setTheme] = useState('dark')
   const navRef = useRef(null)
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'dark'
+    setTheme(savedTheme)
+    if (savedTheme === 'light') document.body.classList.add('light-mode')
+
     gsap.fromTo(navRef.current,
       { y: -80, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.2 }
@@ -43,16 +48,45 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* CTA */}
-      <a
-        href="https://github.com/dishajain2605"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="nav-cta"
-        style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}
-      >
-        <span>⌬</span> GitHub
-      </a>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="nav-actions">
+        <button
+          onClick={() => {
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+            if (newTheme === 'light') document.body.classList.add('light-mode');
+            else document.body.classList.remove('light-mode');
+          }}
+          style={{
+            background: 'transparent',
+            border: '1px solid var(--neon-cyan)',
+            color: 'var(--neon-cyan)',
+            width: '34px',
+            height: '34px',
+            borderRadius: '50%',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '1rem',
+            transition: 'all 0.3s ease'
+          }}
+          aria-label="Toggle theme"
+          title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
+        {/* CTA */}
+        <a
+          href="https://github.com/dishajain2605"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-cta"
+          style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}
+        >
+          <span>⌬</span> GitHub
+        </a>
+      </div>
 
       {/* Mobile hamburger */}
       <div

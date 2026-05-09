@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import avatarImg from '../assets/avatar.jpg'
+import avatarImg from '../assets/WhatsApp Image 2026-05-08 at 3.45.42 PM.jpeg'
 
 gsap.registerPlugin(ScrollTrigger)
 

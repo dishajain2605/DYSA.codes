@@ -41,7 +41,6 @@ export default function Footer() {
           {[
             { label: 'GitHub',    href: 'https://github.com/dishajain2605',                         color: '#8b5cf6' },
             { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/disha-jain-b6190a242',         color: '#00f5ff' },
-            { label: 'Instagram', href: 'https://www.instagram.com/disha_jain_2004/',               color: '#ff2d78' },
             { label: 'Email',     href: 'mailto:msgtodisha.2202@gmail.com',                         color: '#00ff88' },
           ].map(({ label, href, color }) => (
             <a

@@ -26,13 +26,6 @@ const CONTACTS = [
     href: 'https://www.linkedin.com/in/disha-jain-b6190a242',
     color: '#00ff88',
   },
-  {
-    platform: 'Instagram',
-    icon: '◉',
-    handle: '@disha_jain_2004',
-    href: 'https://www.instagram.com/disha_jain_2004/',
-    color: '#ff2d78',
-  },
 ]
 
 export default function Contact() {
