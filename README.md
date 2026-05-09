@@ -12,7 +12,7 @@ Designed with an aesthetic inspired by top-tier creative agencies, featuring imm
 
 ---
 
-## 🔥 Elite Features
+##  Elite Features
 - **3D Physics Hero Canvas:** Interactive particle field and floating cyber geometry powered by `@react-three/fiber` & `Three.js`.
 - **Intense GSAP Interactions:** Magnetic custom cursors, parallax scrolling algorithms, and sub-pixel stagger text reveals using the industry-standard `GSAP` animation engine.
 - **Lenis Smooth Scroll Engine:** High-performance, friction-based viewport scrolling for an unparalleled luxury user experience.
@@ -27,7 +27,7 @@ Designed with an aesthetic inspired by top-tier creative agencies, featuring imm
 * **Motion Physics:** Lenis Scroll, GSAP QuickTo
 * **Icons:** React Icons
 
-## 🚀 Quick Start (Local Setup)
+##  Quick Start (Local Setup)
 
 To experience the platform locally:
 
@@ -47,7 +47,7 @@ npm run dev
 
 Visit `http://localhost:5173` to view the live dashboard!
 
-## 📁 Architecture & Highlights
+##  Architecture & Highlights
 
 ```
 src/
@@ -62,7 +62,7 @@ src/
 └── main.jsx           # React DOM Injection
 ```
 
-## 👩‍💻 About the Developer
+##  About the Developer
 Built by **Disha Jain (DYSA.codes)**. I stand at the intersection of brilliant user interfaces and intelligent machine algorithms. I combine React development with AI/ML logic to bring automated, intelligent, and visually revolutionary projects to reality.
 
 *This project is completely hand-coded with zero pre-built layout templates.*
